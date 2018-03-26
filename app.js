@@ -1,5 +1,7 @@
 //Global variables
-
+var quizSteps = getElementById('#alignment .quiz-step'),
+    totalScore = 0;
+    
 
 
 
