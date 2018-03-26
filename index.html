@@ -7,11 +7,102 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Question1:Do you get very angry when someone kills you in a game.?</h1>
-<h1>Question2:Are you a Casual or Hardcore Gamer?</h1>
-<h1>Question3:Do you like to taunt your opponents?</h1>
-<h1>Question4:Do you use mods?</h1>
-<h1>Question5:Do you follow the rules or use exploits?</h1>
+    <div id="alignment">
+  <h1>What Type of Gamer Are You?</h1>
+    <ul class="quiz-step step1 current">
+        <li class="question">
+            <div class="question-wrap">
+                <h2>Question1:Do you get very angry when someone kills you in a game.?</h2>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" new-value="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">It's part of the game no biggie.</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" new-value="4">
+            <div class="answer-wrap"> 
+                <p class="answer-text">REVENGE!</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="quiz-step step2">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question2:Are you a Casual or Hardcore Gamer?</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" new-value="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">Casual!</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" new-value="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Hardcore</p>
+            </div>
+        </li>
+    </ul>
+        <ul class="quiz-step step3">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question3:Do you follow the rules or use exploits?</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" new-value="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">I follow the rules for fair play.</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" new-value="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Exploits are part of the game.</p>
+            </div>
+        </li>
+    </ul>
+         <ul class="quiz-step step4">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question4:Do you use mods?</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" new-value="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">No i want the vanilla experience.</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" new-value="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Yeah mods make the game better.</p>
+            </div>
+        </li>
+    </ul>   
+      
+        <ul class="quiz-step step5">
+        <li class="question">
+            <div class="question-wrap">
+                <p>Question5:Do you like to taunt your opponents</p>
+            </div>
+        </li>
+        <li class="quiz-answer low-value" new-value="2">
+            <div class="answer-wrap"> 
+                <p class="answer-text">I want to relax and enjoy the game.</p>
+            </div>
+        </li>
+        <li class="quiz-answer high-value" new-value="4">
+            <div class="answer-wrap">
+                <p class="answer-text">Psychological warfare is a legit tactic.</p>
+            </div>
+        </li>
+    </ul>
+    <ul id="results">
+        <li class="results-inner">
+            <p>Calculating:</p>
+            <h1></h1>
+            <p class="desc"></p>
+        </li>
+    </ul>
+</div>
 
     </body>
 <script src="app.js"></script>
