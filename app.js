@@ -1,10 +1,17 @@
 //Global variables
-var quizSteps = getElementById('#alignment .quiz-step'),
-    totalScore = 0;
-    
 
 
 
+function check() {
+    document.getElementById("lb").checked = true;
+}
+function uncheck() {
+    document.getElementById("lb").checked = false;
+}
+
+function myFunction() {
+    document.getElementById("button").innerHTML = "this is a test";
+}
 
 
 
