@@ -37,6 +37,8 @@ function check() {
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
+    var question4 = document.quiz.question4.value;
+    var question5 = document.quiz.question5.value;
     var correct = 0;
 
     //ANSWERS
@@ -49,6 +51,14 @@ function check() {
     if (question3 == "1776") {
         correct++;
     }
+    
+    if (question4 == "James Madison") {
+        correct++;
+    }
+    if (question5 == "Attack on Pearl Harbor") {
+        correct++;
+    }
+    
 
     //ARRAY
     var pictures = ["images/win.gif", "images/meh.gif", "images/lose.gif"];
@@ -57,14 +67,21 @@ function check() {
 
 
     if (correct == 0) {
+        score = 4;
+    }
+    
+    if (correct == 0) {
+        score = 3;
+    }
+    if (correct == 0) {
         score = 2;
     }
 
-    if (correct > 0 && correct < 3) {
+    if (correct > 0 && correct < 5) {
         score = 1;
     }
 
-    if (correct == 3) {
+    if (correct == 5) {
         score = 0;
     }
 
