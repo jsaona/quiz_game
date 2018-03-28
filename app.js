@@ -1,44 +1,8 @@
-//const quizContainer = document.getElementById('quiz');
-//const resultsContainer = document.getElementById('results');
-//const submitButton = document.getElementById('submit');
-//
-//
-////FUNCTION
-//function check() {
-//    document.getElementsByTagName("input").checked = true;
-//}
-//function uncheck() {
-//    document.getElementsByTagName("input").checked = false;
-//}
-//
-////document.getElementById("button").onclick = function () {
-////    gamerScore.lawfulGood++;
-////    console.log(gamerScore);
-//};
-//
-////SCORE
-////var gamerScore = {
-////    lawfulGood: 0,
-////    lawfulEvil: 0,
-////    neutral: 0,
-////    chaoticGood: 0,
-////    chaoticEvil: 0
-////};
-//
-////ARRAY
-//var gamerScore = ['lawfulGood', 'lawfulEvil', 'neutral', 'chaoticGood', 'chaoticEvil'];
-//
-//console.log(gamerScore.length);
-//// 2
-
-
 function check() {
 
     var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
-    var question4 = document.quiz.question4.value;
-    var question5 = document.quiz.question5.value;
     var correct = 0;
 
     //ANSWERS
@@ -51,20 +15,11 @@ function check() {
     if (question3 == "1776") {
         correct++;
     }
-    
-    if (question4 == "James Madison") {
-        correct++;
-    }
-    if (question5 == "Attack on Pearl Harbor") {
-        correct++;
-    }
-    
 
     //ARRAY
     var pictures = ["images/win.gif", "images/meh.gif", "images/lose.gif"];
     var messages = ["Great job!", "That's just okay", "You really need to do better"];
     var score;
-
 
     if (correct == 0) {
         score = 4;
@@ -73,15 +28,16 @@ function check() {
     if (correct == 0) {
         score = 3;
     }
+    
     if (correct == 0) {
         score = 2;
     }
 
-    if (correct > 0 && correct < 5) {
+    if (correct > 0 && correct < 3) {
         score = 1;
     }
 
-    if (correct == 5) {
+    if (correct == 3) {
         score = 0;
     }
 
