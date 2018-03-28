@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:500,700');
+
 
 body {
-    background-color: steelblue;
-    font-size: 1.5em;
+    background: url(/images/heroes.jpg) no-repeat center center fixed;
+    background-size: cover;
     color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    
+
 }
 
 /*
@@ -12,5 +18,5 @@ container{
 */
 
 h2{
-    color: black;
+    color: darkorange;
 }
