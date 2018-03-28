@@ -1,66 +1,53 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
 
 <head>
-    <title>What Type Of Gamer Are You</title>
+
+    <title>American history</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="app.js"></script>
 
 </head>
 
+
 <body>
-<!--    <div id="container">-->
-        <h1>What Type of Gamer Are You?</h1>
-
-        <!-- QUESTION 1 -->
-        <form>
-            <h2>Question1:Do you get very angry when someone kills you in a game.?</h2><br>
-            <input type="radio" name="btn" id="lb1">It's part of the game no biggie.<br>
-            <input type="radio" name="btn" id="rb1">REVENGE!
-        </form>
-
-        <!-- QUESTION 2 -->
-        <form>
-            <h2>Question2:Are you a Casual or Hardcore Gamer?</h2><br>
-            <input type="radio" name="btn" id="lb2">Casual!</br>
-            <input type="radio" name="btn" id="rb2">Hardcore
-        </form>
-
-        <!-- QUESTION 3 -->
-        <form>
-            <h2>Question3:Do you follow the rules or use exploits?</h2><br>
-            <input type="radio" name="btn" id="lb3">I follow the rules for fair play.</br>
-            <input type="radio" name="btn" id="rb3">Exploits are part of the game.
-        </form>
+    <h1>American History Quiz</h1>
 
 
-        <!-- QUESTION 4 -->
-        <form>
-            <h2>Question4:Do you use mods?</h2><br>
-            <input type="radio" name="btn" id="lb4">No, I want the vanilla experience.</br>
-            <input type="radio" name="btn" id="rb4">Yeah, mods make the game better.
-        </form>
+    <form id="quiz" name="quiz">
 
-        <!-- QUESTION 5 -->
-        <form>
-            <h2>Question5:Do you like to taunt your opponents</h2><br>
-            <input type="radio" name="btn" id="lb5">I want to relax and enjoy the game.</br>
-            <input type="radio" name="btn" id="rb5">Psychological warfare is a legit tactic.
-        </form>
+        <!--QUESTION ONE -->
 
-        <!-- RESULTS -->
+        <p class="questions">What was the Jamestown settlement?</p>
 
-        <ul id="results">
-            <li class="results-inner">
-                <h3>Calculating:</p>
-                    <p class="desc"></p>
-                    <button id="button">Submit</button>
+        <input type="radio" id="mc" name="question1" value="The first permanent English settlement in the Americas"> The first permanent English settlement in the Americas<br>
+        <input type="radio" id="mc" name="question1" value="The location of the first Thanksgiving celebration"> The location of the first Thanksgiving celebration<br>
 
-            </li>
-        </ul>
+        <!-- QUESTION TWO -->
+        <p class="questions">Which state was the first to secede from the Union before the start of the Civil War?</p>
+        <input type="radio" id="mc" name="question2" value="South Carolina"> South Carolina<br>
+        <input type="radio" id="mc" name="question2" value="Tennessee"> Tennessee<br>
+        <input type="radio" id="mc" name="question2" value="Mississippi"> Mississippi<br>
+
+        <!--QUESTION THREE -->
+        <p class="questions">What year was the Declaration of Independence signed?
+        </p>
+
+        <input type="radio" id="mc" name="question3" value="1802"> 1802<br>
+        <input type="radio" id="mc" name="question3" value="1776"> 1776<br>
+        <input type="radio" id="mc" name="question3" value="1812"> 1812<br>
+
+        <input id="button" type="button" value="I'm finished!" onclick="check();">
+
+
+    </form>
+
+    <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <img id="picture">
     </div>
 
-</body>
-
 </html>
+
+</body>
